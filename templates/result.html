@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Analyzer Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="mt-5"><img src="static/images/color.png" /> Results</h1>
+        <div class="row mt-5">
+            {% for color in colors %}
+            <div class="col-md-4 mb-4">
+                <div style="background-color: rgb({{ color.rgb.r }}, {{ color.rgb.g }}, {{ color.rgb.b }}); height: 100px;"></div>
+                <p class="mt-2">RGB: {{ color.rgb.r }}, {{ color.rgb.g }}, {{ color.rgb.b }}</p>
+                <p>Percentage: {{ color.proportion }}%</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

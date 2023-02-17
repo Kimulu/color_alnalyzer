@@ -1,0 +1,33 @@
+body{
+    background-color: #d8d8e1;
+    opacity: 1;
+    background-image: linear-gradient(45deg, #dedfec 50%, #d8d8e1 50%);
+    background-size: 7px 7px;
+}
+
+.header{
+    padding-bottom:4%;
+}
+.container-fluid {
+    padding-top: 7%;
+    padding:7% 2% 2% 4%;
+   text-align:center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.form-group {
+    
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1em;
+}
+button[type="submit"] {
+    display: inline-block;
+    vertical-align: middle;
+}
+h1 {
+    display:inline;
+    text-align: center;
+}
